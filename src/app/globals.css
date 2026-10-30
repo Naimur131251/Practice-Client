@@ -111,3 +111,38 @@
     color: #111318;
   }
 }
+
+
+
+
+/* StudioSpace Hero Slider */
+
+.hero-slider .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #9298a5;
+  opacity: 0.65;
+  transition: width 250ms ease, background 250ms ease, opacity 250ms ease;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+  width: 28px;
+  background: #ff6b35;
+  opacity: 1;
+}
+
+.hero-slider .swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slider *,
+  .hero-slider *::before,
+  .hero-slider *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
